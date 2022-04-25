@@ -1,0 +1,19 @@
+#convert all lowercase letters to uppercase letters and vice versa
+def swap_case(s):
+    L=[]
+    for i in range(len(s)):
+        if s[i].isupper()==True:
+            a=s[i].lower()
+            L.append(a)
+        elif s[i].islower()==True:
+            a=s[i].upper()
+            L.append(a)
+        else:
+            L.append(s[i])
+    value=''.join(L)
+    return value
+
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
