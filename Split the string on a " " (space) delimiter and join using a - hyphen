@@ -1,0 +1,11 @@
+#Split the string on a " " (space) delimiter and join using a - hyphen.
+def split_and_join(line):
+    # write your code here
+    for i in range(len(line)):
+        value=line.replace(' ','-')
+    return value
+
+if __name__ == '__main__':
+    line = input()
+    result = split_and_join(line)
+    print(result)
